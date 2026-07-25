@@ -1,135 +1,108 @@
 # Ståklar — tekstindhold
 
-Forhandlingsdrevet side — uden synligt “teknik-teater”. Blødere åbning, bevis tidligt, kort formular, tracking.
+B2B-side med Chris Voss-inspireret dramaturgi: kalibrerede spørgsmål, accusation audit, labels, “that’s right” og et nej-orienteret næste skridt.
 
 ## Meta
 
-- **Sidetitel:** Ståklar — Har I egentlig en plan?
-- **Meta description:** Har I egentlig en plan — eller bare en god fornemmelse? Ståklar hjælper hjem og virksomheder med beredskab, der kan bruges.
+- **Sidetitel:** Ståklar — Ét samlet beredskab for virksomheder
+- **Meta description:** Ståklar samler brand, fysisk sikkerhed, cybersikkerhed og krisestyring i ét sammenhængende beredskab for virksomheder.
 
 ## Navigation
 
 - Brand: STÅKLAR
 - Det I tænker
-- Det der er sandt
-- Hvem vi er
+- Én samlet løsning
+- Faglighederne
 - En snak
-- CTA (desktop): Er det en dårlig idé?
-- CTA (mobil): En snak?
-- Mobilmenu-CTA: Nej — lad os snakke
+- CTA: Er det en dårlig idé?
 
 ## Hero
 
-- **Brand:** STÅKLAR
-- **Spørgsmål:** Har I egentlig en plan — eller bare en god fornemmelse?
-- **Brødtekst:** Ikke en mappe. Ikke et kursus, I glemmer. En plan I kan bruge — fra folk, der har stået i det.
-- **CTA 1:** Det lyder bekendt → #bevis
-- **CTA 2:** Spring til snakken
+- **Kicker:** Beredskab for virksomheder
+- **Spørgsmål:** Er jeres virksomhed egentlig klar — eller har I bare fire leverandører og en god fornemmelse?
+- **Brødtekst:** Ståklar samler brand, fysisk sikkerhed, cybersikkerhed og krisestyring ét sted. Ikke som fire siloer, men som ét beredskab, I kan bruge.
+- **CTA 1:** Se hvor det hænger sammen
+- **CTA 2:** Tag den korte snak
 
-## Bevis (lys sektion)
+## One stop shop
 
-- **Kicker:** Et konkret eksempel
-- **Overskrift:** En eftermiddag. Tre aftaler. Ro i maven.
-- **Tekst:** Vi hjalp en familie i et rækkehus med tre ting: hvor brandslukkeren skal stå, hvem der henter børnene, og hvad I gør, hvis strømmen går. Ingen mappe på 40 sider. Bare noget, alle kunne huske — også børnene.
-- **Tekst 2:** Det er sådan vi arbejder. Småt. Tydeligt. Til at bruge.
-- **Tal:** 3
-- **Tal-label:** aftaler, familien kunne gentage samme aften
-- **Link:** Fortsæt →
+- **Kicker:** Krisen følger ikke jeres organisationsdiagram
+- **Overskrift:** Fire fagligheder. Ét samlet svar.
+- **Tekst:** En brand eller et cyberangreb bliver sjældent i sin egen silo. Hændelsen kan stoppe driften, påvirke adgangen til jeres lokationer, bringe mennesker i fare og presse ledelsen til hurtige beslutninger. Alligevel bliver de fire områder ofte håndteret hver for sig.
+- **Tekst 2:** Hos Ståklar mødes de i samme plan. Det er jeres one stop shop — og kombinationen er vores secret sauce.
+- **Tal:** 1
+- **Tal-label:** samlet partner for hele virksomhedens robusthed
 
 ## I tænker sikkert…
 
-- At det her er paranoia.
-- At I har styr på det i forvejen.
-- At det aldrig sker for jer.
-- At en mappe på hylden er det samme som at være klar.
-- At I ikke har tid til endnu et “projekt”.
-- **Lukning:** Hvis noget af det rammer, er I ikke svære. I er normale.
+- At I allerede har en leverandør til hver del.
+- At brandsikkerhed kan stå alene som en lovpligtig øvelse.
+- At fysisk sikkerhed, cyber og kriseplaner bedst håndteres hver for sig.
+- At medarbejderne nok ved, hvad de skal gøre, hvis noget sker.
+- At et samlet beredskab bliver endnu et tungt projekt.
+- **Lukning:** Hvis noget af det lyder bekendt, er I ikke bagud. I er organiseret som de fleste virksomheder.
 
-## Det der er sandt
+## Én samlet løsning
 
-- **Citat:** »Vi vil ikke være bange. Vi vil bare vide, hvad vi gør — så vi kan beholde roen, hvis noget sker.«
-- **Bekræftelse:** Hvis det lyder rigtigt, behøver I ikke sige ja. Det er nok, at det føles sandt.
+- **Citat:** »Vi mangler ikke flere specialister. Vi mangler, at de ser den samme virksomhed og arbejder efter den samme plan.«
+- **Bekræftelse:** Det er forskellen på fire ydelser og ét beredskab. Den svære del er ikke at købe ekspertise. Det er at få ekspertisen til at virke sammen.
 
 ### Hvad I egentlig vil
 
-Ikke være bange. Bare vide, hvad I gør, hvis noget sker.
+Beskytte driften, medarbejderne og tilliden — uden at gøre sikkerhed til virksomhedens fuldtidsprojekt.
 
 ### Hvad I ikke vil
 
-En tyk rapport. Et kursus, I glemmer. En følelse af, at nogen taler ned til jer.
+Koordinere fire specialister, fire planer og fire forskellige svar, når noget rammer.
 
 ### Hvad der faktisk virker
 
-En enkel plan. Lidt øvelse. Og nogen, der har stået i det før.
+Én prioritering, ét samlet beredskab og fagligheder, der arbejder med — ikke ved siden af — hinanden.
 
-## Hvem vi er
+## Faglighederne
 
-- **Overskrift:** Tre mennesker. Ingen slides.
-- **Brødtekst:** En politimand, en militærofficer og en brandmand, der også er brandsikringsrådgiver. Vi siger det, andre pakker ind.
+- **Overskrift:** One stop shop. Uden silotænkning.
+- **Brødtekst:** Hver faglighed er stærk alene. Værdien opstår, når de udfordrer hinandens blinde vinkler og bygger én løsning omkring jeres virkelighed. Det er kombinationen — ikke kataloget — der er vores secret sauce.
 
-### Politimand
+### Brand
 
-Jeg har set, hvad der sker, når folk skal beslutte under pres — uden en plan.
+Vi forebygger brand og gør mennesker, bygninger og drift klar, hvis det alligevel brænder.
 
-### Militærofficer
+### Fysisk sikkerhed
 
-Jeg laver planer, man kan bruge, når hovedet ikke er klart. Ikke planer, der ser pæne ud.
+Vi gør mennesker, adgang, bygninger og kritiske funktioner sværere at ramme.
 
-### Brandmand & brandsikringsrådgiver
+### Cybersikkerhed
 
-Jeg har både slukket brande og hjulpet folk med at undgå dem. Begge dele tæller.
+Vi reducerer den digitale risiko og gør jer klar til at reagere, når teknologien svigter.
 
-## Hvis vi snakker
+### Krisestyring
 
-- **Overskrift:** Hvis vi snakker, ser det sådan ud
-- **1.** Vi lytter først. Hvad bekymrer jer? Hvad har I allerede?
-- **2.** Vi siger det ligeud. Hvad der mangler — og hvad der er spild af tid.
-- **3.** I får noget, I kan bruge. Plan og øvelse, tilpasset jer. Hjem fra 4.900 kr. Virksomhed fra 14.900 kr.
-- **Note:** Ingen binding i første snak. Hvis det ikke er jer, siger vi det også.
+Vi samler ansvar, beslutninger og kommunikation i en plan, der også virker under pres.
+
+## Sådan bliver det konkret
+
+1. **Vi lytter først.** Hvad skal I beskytte? Hvad har I allerede? Hvor mærker I usikkerheden?
+2. **Vi samler blikkene.** Brand, fysisk sikkerhed, cyber og krisestyring vurderer den samme virkelighed — sammen.
+3. **I får én retning.** En prioriteret plan, konkrete tiltag og øvelser, som hænger sammen på tværs af hele virksomheden.
+
+Ingen standardpakke forklædt som rådgivning. Hvis vi ikke er det rigtige match, siger vi det også.
 
 ## Close
 
-- **Spørgsmål:** Er det en dårlig idé at tage en uforpligtende snak?
-- **Hjælp:** Det sikre svar er ofte nej. Nej til at udskyde. Nej til at gætte.
+- **Spørgsmål:** Ville det være en dårlig idé at se, hvor jeres beredskab har huller mellem faglighederne?
+- **Hjælp:** Det sikre svar er ofte nej. Nej til endnu en siloløsning. Nej til at opdage mellemrummene midt i en krise.
 - **Valg 1:** Nej — lad os snakke
 - **Valg 2:** Jeg er ikke sikker endnu
-- **Nudge:** Fair. Usikkerhed er ikke et nej — det er ofte tegn på, at noget her betyder noget.
-- **Nudge-CTA:** Okay — så skriv alligevel
 
-### Formular (3 felter)
+### Formular
 
-- Godt. Tre felter — så tager vi den derfra.
 - Navn
 - E-mail
 - Hvad fylder?
-  - Placeholder: Hvad bekymrer jer — eller hvad vil I have styr på?
-- Send
-- **Succes:** Tak. Vi vender tilbage inden for en hverdag — med et konkret næste skridt.
-
-### Direkte
-
-- Hellere ringe?
-- +45 52 12 34 56
-- hej@staaklar.dk
+- **Placeholder:** Hvilken risiko, hændelse eller udfordring vil I have styr på?
 
 ## Footer
 
 - STÅKLAR
-- Klarhed uden dikkedarer.
-- © [årstal]
-
-## Tracking-events
-
-- `page_view`
-- `hero_sounds_familiar`
-- `hero_skip_to_talk`
-- `proof_continue`
-- `nav_cta`
-- `close_yes_talk`
-- `close_not_sure`
-- `close_yes_after_nudge`
-- `form_submit`
-- `click_phone`
-- `click_email`
-
-Events pushes til `window.dataLayer` og `staaklar:track` CustomEvent. I dev logges de i console.
+- Fire fagligheder. Ét beredskab.

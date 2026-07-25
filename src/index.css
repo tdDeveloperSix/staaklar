@@ -438,20 +438,30 @@ button {
   color: var(--signal);
 }
 
+.hero__eyebrow {
+  margin-bottom: 0.65rem;
+  color: var(--signal);
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .hero__question {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(1.55rem, 5vw, 2.65rem);
   line-height: 1.08;
   letter-spacing: 0.01em;
-  max-width: 16ch;
+  max-width: 21ch;
   margin-bottom: 0.85rem;
   text-transform: uppercase;
   font-kerning: normal;
 }
 
 .hero__lead {
-  max-width: 34ch;
+  max-width: 48ch;
   color: var(--paper-dim);
   font-size: 1.02rem;
   line-height: 1.5;
@@ -798,12 +808,12 @@ button {
 
 @media (min-width: 900px) {
   .who__lanes {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     border-left: 1px solid var(--line);
   }
 
   .who__lane {
-    padding: 2.25rem 1.4rem 2.75rem;
+    padding: 2.25rem 1.15rem 2.75rem;
     border-right: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
     min-height: 22rem;

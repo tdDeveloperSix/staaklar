@@ -5,46 +5,50 @@ import { track } from './lib/track'
 
 const navLinks = [
   { href: '#tanker', label: 'Det I tænker' },
-  { href: '#sandt', label: 'Det der er sandt' },
-  { href: '#hvem', label: 'Hvem vi er' },
+  { href: '#sandt', label: 'Én samlet løsning' },
+  { href: '#fagligheder', label: 'Faglighederne' },
   { href: '#snak', label: 'En snak' },
 ]
 
 const accusations = [
-  'At det her er paranoia.',
-  'At I har styr på det i forvejen.',
-  'At det aldrig sker for jer.',
-  'At en mappe på hylden er det samme som at være klar.',
-  'At I ikke har tid til endnu et “projekt”.',
+  'At I allerede har en leverandør til hver del.',
+  'At brandsikkerhed kan stå alene som en lovpligtig øvelse.',
+  'At fysisk sikkerhed, cyber og kriseplaner bedst håndteres hver for sig.',
+  'At medarbejderne nok ved, hvad de skal gøre, hvis noget sker.',
+  'At et samlet beredskab bliver endnu et tungt projekt.',
 ]
 
-const people = [
+const disciplines = [
   {
-    role: 'Politimand',
-    line: 'Jeg har set, hvad der sker, når folk skal beslutte under pres — uden en plan.',
+    role: 'Brand',
+    line: 'Vi forebygger brand og gør mennesker, bygninger og drift klar, hvis det alligevel brænder.',
   },
   {
-    role: 'Militærofficer',
-    line: 'Jeg laver planer, man kan bruge, når hovedet ikke er klart. Ikke planer, der ser pæne ud.',
+    role: 'Fysisk sikkerhed',
+    line: 'Vi gør mennesker, adgang, bygninger og kritiske funktioner sværere at ramme.',
   },
   {
-    role: 'Brandmand & brandsikringsrådgiver',
-    line: 'Jeg har både slukket brande og hjulpet folk med at undgå dem. Begge dele tæller.',
+    role: 'Cybersikkerhed',
+    line: 'Vi reducerer den digitale risiko og gør jer klar til at reagere, når teknologien svigter.',
+  },
+  {
+    role: 'Krisestyring',
+    line: 'Vi samler ansvar, beslutninger og kommunikation i en plan, der også virker under pres.',
   },
 ]
 
 const truths = [
   {
     q: 'Hvad I egentlig vil',
-    a: 'Ikke være bange. Bare vide, hvad I gør, hvis noget sker.',
+    a: 'Beskytte driften, medarbejderne og tilliden — uden at gøre sikkerhed til virksomhedens fuldtidsprojekt.',
   },
   {
     q: 'Hvad I ikke vil',
-    a: 'En tyk rapport. Et kursus, I glemmer. En følelse af, at nogen taler ned til jer.',
+    a: 'Koordinere fire specialister, fire planer og fire forskellige svar, når noget rammer.',
   },
   {
     q: 'Hvad der faktisk virker',
-    a: 'En enkel plan. Lidt øvelse. Og nogen, der har stået i det før.',
+    a: 'Én prioritering, ét samlet beredskab og fagligheder, der arbejder med — ikke ved siden af — hinanden.',
   },
 ]
 
@@ -191,14 +195,15 @@ function App() {
           <div className="hero__shade" />
           <div className="hero__grain" />
           <div className="hero__content">
+            <p className="hero__eyebrow hero__reveal">Beredskab for virksomheder</p>
             <h1 className="hero__brand hero__reveal">
               STÅ<span>KLAR</span>
             </h1>
             <p className="hero__question hero__reveal hero__reveal--2">
-              Har I egentlig en plan — eller bare en god fornemmelse?
+              Er jeres virksomhed egentlig klar — eller har I bare fire leverandører og en god fornemmelse?
             </p>
             <p className="hero__lead hero__reveal hero__reveal--3">
-              Ikke en mappe. Ikke et kursus, I glemmer. En plan I kan bruge — fra folk, der har stået i det.
+              Ståklar samler brand, fysisk sikkerhed, cybersikkerhed og krisestyring ét sted. Ikke som fire siloer, men som ét beredskab, I kan bruge.
             </p>
             <div className="hero__actions hero__reveal hero__reveal--4">
               <a
@@ -206,35 +211,34 @@ function App() {
                 href="#bevis"
                 onClick={() => track('hero_sounds_familiar')}
               >
-                Det lyder bekendt
+                Se hvor det hænger sammen
               </a>
               <a
                 className="btn btn--ghost"
                 href="#snak"
                 onClick={() => track('hero_skip_to_talk')}
               >
-                Spring til snakken
+                Tag den korte snak
               </a>
             </div>
           </div>
         </section>
 
-        {/* Proof early + daylight contrast */}
         <section className="day" id="bevis">
           <div className="day__inner">
             <motion.div className="day__copy" {...reveal}>
-              <p className="day__kicker">Et konkret eksempel</p>
-              <h2 className="day__title">En eftermiddag. Tre aftaler. Ro i maven.</h2>
+              <p className="day__kicker">Krisen følger ikke jeres organisationsdiagram</p>
+              <h2 className="day__title">Fire fagligheder. Ét samlet svar.</h2>
               <p className="day__text">
-                Vi hjalp en familie i et rækkehus med tre ting: hvor brandslukkeren skal stå, hvem der henter børnene, og hvad I gør, hvis strømmen går. Ingen mappe på 40 sider. Bare noget, alle kunne huske — også børnene.
+                En brand eller et cyberangreb bliver sjældent i sin egen silo. Hændelsen kan stoppe driften, påvirke adgangen til jeres lokationer, bringe mennesker i fare og presse ledelsen til hurtige beslutninger. Alligevel bliver de fire områder ofte håndteret hver for sig.
               </p>
               <p className="day__text day__text--soft">
-                Det er sådan vi arbejder. Småt. Tydeligt. Til at bruge.
+                Hos Ståklar mødes de i samme plan. Det er jeres one stop shop — og kombinationen er vores secret sauce.
               </p>
             </motion.div>
             <motion.aside className="day__aside" {...reveal}>
-              <p className="day__stat">3</p>
-              <p className="day__stat-label">aftaler, familien kunne gentage samme aften</p>
+              <p className="day__stat">1</p>
+              <p className="day__stat-label">samlet partner for hele virksomhedens robusthed</p>
               <a className="day__link" href="#tanker" onClick={() => track('proof_continue')}>
                 Fortsæt →
               </a>
@@ -264,7 +268,7 @@ function App() {
               ))}
             </ul>
             <motion.p className="audit__close" {...reveal}>
-              Hvis noget af det rammer, er I ikke svære. I er normale.
+              Hvis noget af det lyder bekendt, er I ikke bagud. I er organiseret som de fleste virksomheder.
             </motion.p>
           </div>
         </section>
@@ -273,11 +277,11 @@ function App() {
           <div className="right__stage">
             <motion.blockquote className="right__quote" {...reveal}>
               <p>
-                »Vi vil ikke være bange. Vi vil bare vide, hvad vi gør — så vi kan beholde roen, hvis noget sker.«
+                »Vi mangler ikke flere specialister. Vi mangler, at de ser den samme virksomhed og arbejder efter den samme plan.«
               </p>
             </motion.blockquote>
             <motion.p className="right__confirm" {...reveal}>
-              Hvis det lyder rigtigt, behøver I ikke sige ja. Det er nok, at det føles sandt.
+              Det er forskellen på fire ydelser og ét beredskab. Den svære del er ikke at købe ekspertise. Det er at få ekspertisen til at virke sammen.
             </motion.p>
           </div>
 
@@ -298,20 +302,20 @@ function App() {
           </div>
         </section>
 
-        <section className="who" id="hvem">
+        <section className="who" id="fagligheder">
           <div className="who__intro">
             <motion.h2 className="who__title" {...reveal}>
-              Tre mennesker. Ingen slides.
+              One stop shop. Uden silotænkning.
             </motion.h2>
             <motion.p className="who__text" {...reveal}>
-              En politimand, en militærofficer og en brandmand, der også er brandsikringsrådgiver. Vi siger det, andre pakker ind.
+              Hver faglighed er stærk alene. Værdien opstår, når de udfordrer hinandens blinde vinkler og bygger én løsning omkring jeres virkelighed. Det er kombinationen — ikke kataloget — der er vores secret sauce.
             </motion.p>
           </div>
 
           <div className="who__lanes">
-            {people.map((person, index) => (
+            {disciplines.map((discipline, index) => (
               <motion.article
-                key={person.role}
+                key={discipline.role}
                 className="who__lane"
                 initial={reduceMotion ? false : { opacity: 0, y: 32 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -321,8 +325,8 @@ function App() {
                 <span className="who__num" aria-hidden="true">
                   0{index + 1}
                 </span>
-                <h3>{person.role}</h3>
-                <p>{person.line}</p>
+                <h3>{discipline.role}</h3>
+                <p>{discipline.line}</p>
               </motion.article>
             ))}
           </div>
@@ -331,21 +335,21 @@ function App() {
         <section className="deal" id="hvad">
           <div className="deal__panel">
             <motion.div {...reveal}>
-              <h2 className="deal__title">Hvis vi snakker, ser det sådan ud</h2>
+              <h2 className="deal__title">Sådan bliver det konkret</h2>
             </motion.div>
             <ol className="deal__steps">
               <motion.li {...reveal}>
-                <strong>Vi lytter først.</strong> Hvad bekymrer jer? Hvad har I allerede?
+                <strong>Vi lytter først.</strong> Hvad skal I beskytte? Hvad har I allerede? Hvor mærker I usikkerheden?
               </motion.li>
               <motion.li {...reveal}>
-                <strong>Vi siger det ligeud.</strong> Hvad der mangler — og hvad der er spild af tid.
+                <strong>Vi samler blikkene.</strong> Brand, fysisk sikkerhed, cyber og krisestyring vurderer den samme virkelighed — sammen.
               </motion.li>
               <motion.li {...reveal}>
-                <strong>I får noget, I kan bruge.</strong> Plan og øvelse, tilpasset jer. Hjem fra 4.900 kr. Virksomhed fra 14.900 kr.
+                <strong>I får én retning.</strong> En prioriteret plan, konkrete tiltag og øvelser, som hænger sammen på tværs af hele virksomheden.
               </motion.li>
             </ol>
             <motion.p className="deal__note" {...reveal}>
-              Ingen binding i første snak. Hvis det ikke er jer, siger vi det også.
+              Ingen standardpakke forklædt som rådgivning. Hvis vi ikke er det rigtige match, siger vi det også.
             </motion.p>
           </div>
         </section>
@@ -358,10 +362,10 @@ function App() {
 
           <div className="close__content">
             <motion.h2 className="close__question" {...reveal}>
-              Er det en dårlig idé at tage en uforpligtende snak?
+              Ville det være en dårlig idé at se, hvor jeres beredskab har huller mellem faglighederne?
             </motion.h2>
             <motion.p className="close__help" {...reveal}>
-              Det sikre svar er ofte nej. Nej til at udskyde. Nej til at gætte.
+              Det sikre svar er ofte nej. Nej til endnu en siloløsning. Nej til at opdage mellemrummene midt i en krise.
             </motion.p>
 
             {saidNo === null ? (
@@ -427,7 +431,7 @@ function App() {
                       <textarea
                         id="message"
                         name="message"
-                        placeholder="Hvad bekymrer jer — eller hvad vil I have styr på?"
+                        placeholder="Hvilken risiko, hændelse eller udfordring vil I have styr på?"
                         required
                       />
                     </div>
@@ -440,7 +444,7 @@ function App() {
             ) : null}
 
             <aside className="close__direct">
-              <p>Hellere ringe?</p>
+              <p>Hellere tage den direkte?</p>
               <a href="tel:+4552123456" onClick={() => track('click_phone')}>
                 +45 52 12 34 56
               </a>
@@ -457,7 +461,7 @@ function App() {
           <span className="footer__brand">
             STÅ<span>KLAR</span>
           </span>
-          <span className="footer__meta">Klarhed uden dikkedarer.</span>
+          <span className="footer__meta">Fire fagligheder. Ét beredskab.</span>
           <span className="footer__copy">© {new Date().getFullYear()}</span>
         </div>
       </footer>
