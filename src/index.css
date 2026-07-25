@@ -457,7 +457,8 @@ button {
   max-width: 21ch;
   margin-bottom: 0.85rem;
   text-transform: uppercase;
-  font-kerning: normal;
+  font-kerning: none;
+  font-feature-settings: "kern" 0;
 }
 
 .hero__lead {
@@ -843,6 +844,141 @@ button {
     background:
       linear-gradient(105deg, transparent 55%, rgba(240, 162, 2, 0.04) 55%, rgba(240, 162, 2, 0.04) 100%),
       var(--ink);
+  }
+}
+
+/* —— About —— */
+.about {
+  padding: clamp(4rem, 10vw, 7rem) 0;
+  background:
+    linear-gradient(160deg, #edf2f5 0%, #e2e9ef 55%, #d7e0e8 100%);
+  color: #121820;
+  border-top: 1px solid rgba(18, 24, 32, 0.08);
+}
+
+.about__inner {
+  width: min(100% - (var(--gutter) * 2), var(--max));
+  margin: 0 auto;
+}
+
+.about__header {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.about__kicker {
+  margin-bottom: 0.6rem;
+  color: #8a6200;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about__title {
+  max-width: 14ch;
+  color: #0c1116;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.about__intro {
+  max-width: 48ch;
+  color: #3f4a58;
+  font-size: 1.05rem;
+}
+
+.about__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.about__card {
+  position: relative;
+  min-height: 18rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(18, 24, 32, 0.12);
+}
+
+.about__card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 4rem;
+  height: 3px;
+  background: var(--signal);
+}
+
+.about__card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about__num,
+.about__area {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about__num {
+  color: #9a6d00;
+}
+
+.about__area {
+  color: #657181;
+  text-align: right;
+}
+
+.about__card h3 {
+  max-width: 15ch;
+  margin-bottom: 0.8rem;
+  color: #0c1116;
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 4vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+.about__role {
+  margin-bottom: 1rem;
+  color: #8a6200 !important;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.about__card p {
+  max-width: 34ch;
+  color: #3f4a58;
+}
+
+@media (min-width: 780px) {
+  .about__header {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: end;
+    gap: 3rem;
+  }
+
+  .about__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
