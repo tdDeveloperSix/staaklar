@@ -1,6 +1,6 @@
 # Ståklar
 
-Beredskab til hjem og arbejde — bakket op af en politimand, en militærofficer og en brandmand/brandsikringsrådgiver.
+Et samlet B2B-beredskab på tværs af brand, fysisk sikkerhed, cybersikkerhed og krisestyring.
 
 ## Kom i gang
 
