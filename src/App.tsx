@@ -4,51 +4,50 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { track } from './lib/track'
 
 const navLinks = [
-  { href: '#tanker', label: 'Det I tænker' },
+  { href: '#tanker', label: 'Jeres overvejelser' },
   { href: '#sandt', label: 'Én samlet løsning' },
   { href: '#fagligheder', label: 'Faglighederne' },
-  { href: '#snak', label: 'En snak' },
+  { href: '#snak', label: 'Kontakt' },
 ]
 
 const accusations = [
-  'At I allerede har en leverandør til hver del.',
-  'At brandsikkerhed kan stå alene som en lovpligtig øvelse.',
-  'At fysisk sikkerhed, cyber og kriseplaner bedst håndteres hver for sig.',
-  'At medarbejderne nok ved, hvad de skal gøre, hvis noget sker.',
-  'At et samlet beredskab bliver endnu et tungt projekt.',
+  'I har allerede leverandører og ansvarlige på de enkelte områder.',
+  'De enkelte planer fungerer måske udmærket hver for sig.',
+  'Et samlet beredskab kan lyde som et stort og tungt projekt.',
+  'I ønsker ikke endnu et rådgivningsforløb, der ender i en mappe.',
 ]
 
 const disciplines = [
   {
-    role: 'Brand',
-    line: 'Vi forebygger brand og gør mennesker, bygninger og drift klar, hvis det alligevel brænder.',
+    role: 'Brandsikkerhed',
+    line: 'Forebyggelse, beredskab og tydelige handlinger, der beskytter mennesker, bygninger og drift ved brand.',
   },
   {
     role: 'Fysisk sikkerhed',
-    line: 'Vi gør mennesker, adgang, bygninger og kritiske funktioner sværere at ramme.',
+    line: 'Beskyttelse af mennesker, adgang, bygninger og kritiske funktioner med fokus på at reducere sårbarheder.',
   },
   {
     role: 'Cybersikkerhed',
-    line: 'Vi reducerer den digitale risiko og gør jer klar til at reagere, når teknologien svigter.',
+    line: 'Overblik over digitale risici, afhængigheder og reaktioner, når systemer eller data bliver påvirket.',
   },
   {
     role: 'Krisestyring',
-    line: 'Vi samler ansvar, beslutninger og kommunikation i en plan, der også virker under pres.',
+    line: 'Klare roller, beslutningsveje og kommunikation, så ledelsen kan handle samlet under pres.',
   },
 ]
 
 const truths = [
   {
-    q: 'Hvad I egentlig vil',
-    a: 'Beskytte driften, medarbejderne og tilliden — uden at gøre sikkerhed til virksomhedens fuldtidsprojekt.',
+    q: 'Det skal I beskytte',
+    a: 'Mennesker, drift, bygninger, data og tillid.',
   },
   {
-    q: 'Hvad I ikke vil',
-    a: 'Koordinere fire specialister, fire planer og fire forskellige svar, når noget rammer.',
+    q: 'Det skal I undgå',
+    a: 'Uklare ansvar, modstridende planer og beslutninger, der først bliver koordineret under en hændelse.',
   },
   {
-    q: 'Hvad der faktisk virker',
-    a: 'Én prioritering, ét samlet beredskab og fagligheder, der arbejder med — ikke ved siden af — hinanden.',
+    q: 'Det skaber sammenhæng',
+    a: 'Fælles prioriteringer, tydelige roller og handlinger, der er afstemt på tværs af faglighederne.',
   },
 ]
 
@@ -60,7 +59,6 @@ const fadeUp = {
 function App() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [sent, setSent] = useState(false)
   const [saidNo, setSaidNo] = useState<null | 'yes' | 'curious'>(null)
   const reduceMotion = useReducedMotion()
   const menuId = useId()
@@ -96,8 +94,14 @@ function App() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    const data = new FormData(event.currentTarget)
+    const name = String(data.get('name') ?? '')
+    const email = String(data.get('email') ?? '')
+    const message = String(data.get('message') ?? '')
+    const subject = encodeURIComponent(`Henvendelse fra ${name}`)
+    const body = encodeURIComponent(`Navn: ${name}\nE-mail: ${email}\n\n${message}`)
     track('form_submit')
-    setSent(true)
+    window.location.href = `mailto:hej@staaklar.dk?subject=${subject}&body=${body}`
   }
 
   const reveal = reduceMotion
@@ -140,8 +144,8 @@ function App() {
               closeMenu()
             }}
           >
-            <span className="nav__cta-full">Er det en dårlig idé?</span>
-            <span className="nav__cta-short">En snak?</span>
+            <span className="nav__cta-full">Tag en kort snak</span>
+            <span className="nav__cta-short">Kontakt</span>
           </a>
           <button
             type="button"
@@ -182,7 +186,7 @@ function App() {
               closeMenu()
             }}
           >
-            Nej — lad os snakke
+            Tag en kort snak
           </a>
         </nav>
       </div>
@@ -195,15 +199,15 @@ function App() {
           <div className="hero__shade" />
           <div className="hero__grain" />
           <div className="hero__content">
-            <p className="hero__eyebrow hero__reveal">Beredskab for virksomheder</p>
-            <h1 className="hero__brand hero__reveal">
+            <p className="hero__eyebrow hero__reveal">Sammenhængende beredskab for virksomheder</p>
+            <p className="hero__brand hero__reveal">
               STÅ<span>KLAR</span>
-            </h1>
-            <p className="hero__question hero__reveal hero__reveal--2">
-              Er jeres virksomhed egentlig klar — eller har I bare fire leverandører og en god fornemmelse?
             </p>
+            <h1 className="hero__question hero__reveal hero__reveal--2">
+              Har I fire sikkerhedsløsninger — eller ét samlet beredskab?
+            </h1>
             <p className="hero__lead hero__reveal hero__reveal--3">
-              Ståklar samler brand, fysisk sikkerhed, cybersikkerhed og krisestyring ét sted. Ikke som fire siloer, men som ét beredskab, I kan bruge.
+              Ståklar samler brandsikkerhed, fysisk sikkerhed, cybersikkerhed og krisestyring. I får én partner, ét samlet risikobillede og en plan, der hænger sammen på tværs.
             </p>
             <div className="hero__actions hero__reveal hero__reveal--4">
               <a
@@ -211,7 +215,7 @@ function App() {
                 href="#bevis"
                 onClick={() => track('hero_sounds_familiar')}
               >
-                Se hvor det hænger sammen
+                Se, hvordan vi arbejder
               </a>
               <a
                 className="btn btn--ghost"
@@ -228,17 +232,21 @@ function App() {
           <div className="day__inner">
             <motion.div className="day__copy" {...reveal}>
               <p className="day__kicker">Krisen følger ikke jeres organisationsdiagram</p>
-              <h2 className="day__title">Fire fagligheder. Ét samlet svar.</h2>
+              <h2 className="day__title">Hændelsen rammer på tværs. Beredskabet skal gøre det samme.</h2>
               <p className="day__text">
-                En brand eller et cyberangreb bliver sjældent i sin egen silo. Hændelsen kan stoppe driften, påvirke adgangen til jeres lokationer, bringe mennesker i fare og presse ledelsen til hurtige beslutninger. Alligevel bliver de fire områder ofte håndteret hver for sig.
+                En alvorlig hændelse påvirker sjældent kun ét område. Den kan berøre mennesker, bygninger, adgang, digitale systemer og den daglige drift på samme tid. Samtidig skal ledelsen kunne prioritere, beslutte og kommunikere under pres.
               </p>
               <p className="day__text day__text--soft">
-                Hos Ståklar mødes de i samme plan. Det er jeres one stop shop — og kombinationen er vores secret sauce.
+                Når fagområderne har hver deres ansvarlige, leverandør og plan, kan der opstå huller mellem dem. Ståklar samler områderne, så ansvar, afhængigheder og handlinger hænger sammen.
               </p>
             </motion.div>
             <motion.aside className="day__aside" {...reveal}>
-              <p className="day__stat">1</p>
-              <p className="day__stat-label">samlet partner for hele virksomhedens robusthed</p>
+              <p className="day__model-label">Det betyder i praksis</p>
+              <ul className="day__model">
+                <li>Én indgang</li>
+                <li>Ét samlet blik på risikoen</li>
+                <li>Én fælles retning</li>
+              </ul>
               <a className="day__link" href="#tanker" onClick={() => track('proof_continue')}>
                 Fortsæt →
               </a>
@@ -249,7 +257,7 @@ function App() {
         <section className="audit" id="tanker">
           <div className="audit__inner">
             <motion.h2 className="audit__title" {...reveal}>
-              I tænker sikkert…
+              Det her tænker I måske allerede
             </motion.h2>
             <ul className="audit__list">
               {accusations.map((line, index) => (
@@ -268,20 +276,18 @@ function App() {
               ))}
             </ul>
             <motion.p className="audit__close" {...reveal}>
-              Hvis noget af det lyder bekendt, er I ikke bagud. I er organiseret som de fleste virksomheder.
+              Det er forståeligt. Områderne har ofte forskellige ejere, budgetter og leverandører. Det er netop derfor, mellemrummene let bliver overset.
             </motion.p>
           </div>
         </section>
 
         <section className="right" id="sandt">
           <div className="right__stage">
-            <motion.blockquote className="right__quote" {...reveal}>
-              <p>
-                »Vi mangler ikke flere specialister. Vi mangler, at de ser den samme virksomhed og arbejder efter den samme plan.«
-              </p>
-            </motion.blockquote>
+            <motion.h2 className="right__quote" {...reveal}>
+              I mangler ikke nødvendigvis flere specialister.
+            </motion.h2>
             <motion.p className="right__confirm" {...reveal}>
-              Det er forskellen på fire ydelser og ét beredskab. Den svære del er ikke at købe ekspertise. Det er at få ekspertisen til at virke sammen.
+              I har brug for, at den eksisterende viden arbejder ud fra det samme risikobillede og den samme retning. Det er forskellen på fire separate ydelser og ét samlet beredskab.
             </motion.p>
           </div>
 
@@ -305,10 +311,10 @@ function App() {
         <section className="who" id="fagligheder">
           <div className="who__intro">
             <motion.h2 className="who__title" {...reveal}>
-              One stop shop. Uden silotænkning.
+              Fire fagligheder. Én fælles retning.
             </motion.h2>
             <motion.p className="who__text" {...reveal}>
-              Hver faglighed er stærk alene. Værdien opstår, når de udfordrer hinandens blinde vinkler og bygger én løsning omkring jeres virkelighed. Det er kombinationen — ikke kataloget — der er vores secret sauce.
+              Hvert fagområde har sit eget fokus. Ståklars styrke er ikke kun de fire fagligheder, men arbejdet mellem dem. Her bliver afhængigheder tydelige, ansvar afstemt og løsninger vurderet som en del af virksomhedens samlede beredskab.
             </motion.p>
           </div>
 
@@ -335,21 +341,21 @@ function App() {
         <section className="deal" id="hvad">
           <div className="deal__panel">
             <motion.div {...reveal}>
-              <h2 className="deal__title">Sådan bliver det konkret</h2>
+              <h2 className="deal__title">Fra fire fagområder til én fælles retning</h2>
             </motion.div>
             <ol className="deal__steps">
               <motion.li {...reveal}>
-                <strong>Vi lytter først.</strong> Hvad skal I beskytte? Hvad har I allerede? Hvor mærker I usikkerheden?
+                <strong>Vi skaber overblik.</strong> Hvad skal I beskytte? Hvad har I allerede? Hvem har ansvaret, og hvor er I mest i tvivl?
               </motion.li>
               <motion.li {...reveal}>
-                <strong>Vi samler blikkene.</strong> Brand, fysisk sikkerhed, cyber og krisestyring vurderer den samme virkelighed — sammen.
+                <strong>Vi finder mellemrummene.</strong> Vi ser på afhængigheder, overdragelser og beslutninger mellem brandsikkerhed, fysisk sikkerhed, cybersikkerhed og krisestyring.
               </motion.li>
               <motion.li {...reveal}>
-                <strong>I får én retning.</strong> En prioriteret plan, konkrete tiltag og øvelser, som hænger sammen på tværs af hele virksomheden.
+                <strong>Vi prioriterer næste skridt.</strong> I får en tydelig retning for de tiltag, planer og øvelser, der skal hænge sammen på tværs af de relevante områder.
               </motion.li>
             </ol>
             <motion.p className="deal__note" {...reveal}>
-              Ingen standardpakke forklædt som rådgivning. Hvis vi ikke er det rigtige match, siger vi det også.
+              Indsatsen tager udgangspunkt i jeres virksomhed, jeres eksisterende beredskab og de risici, der er vigtigst at håndtere. Hvis vi ikke er det rette match, siger vi det.
             </motion.p>
           </div>
         </section>
@@ -362,10 +368,10 @@ function App() {
 
           <div className="close__content">
             <motion.h2 className="close__question" {...reveal}>
-              Ville det være en dårlig idé at se, hvor jeres beredskab har huller mellem faglighederne?
+              Ville det være en dårlig idé at få et blik udefra på, hvor jeres beredskab ikke hænger sammen?
             </motion.h2>
             <motion.p className="close__help" {...reveal}>
-              Det sikre svar er ofte nej. Nej til endnu en siloløsning. Nej til at opdage mellemrummene midt i en krise.
+              I behøver ikke have defineret opgaven på forhånd. En kort samtale er nok til at afklare, om der er noget, vi bør se nærmere på sammen.
             </motion.p>
 
             {saidNo === null ? (
@@ -378,7 +384,7 @@ function App() {
                     setSaidNo('yes')
                   }}
                 >
-                  Nej — lad os snakke
+                  Nej — lad os tage en snak
                 </button>
                 <button
                   type="button"
@@ -388,14 +394,14 @@ function App() {
                     setSaidNo('curious')
                   }}
                 >
-                  Jeg er ikke sikker endnu
+                  Jeg er ikke klar endnu
                 </button>
               </motion.div>
             ) : null}
 
             {saidNo === 'curious' ? (
               <motion.div className="close__nudge" {...reveal}>
-                <p>Fair. Usikkerhed er ikke et nej — det er ofte tegn på, at noget her betyder noget.</p>
+                <p>Det er helt fair. I behøver ikke have defineret opgaven på forhånd. Beskriv kort, hvad I er i tvivl om, så kan vi tage udgangspunkt i det.</p>
                 <button
                   type="button"
                   className="btn btn--primary"
@@ -404,42 +410,36 @@ function App() {
                     setSaidNo('yes')
                   }}
                 >
-                  Okay — så skriv alligevel
+                  Beskriv det kort
                 </button>
               </motion.div>
             ) : null}
 
-            {saidNo === 'yes' || sent ? (
+            {saidNo === 'yes' ? (
               <motion.div className="close__form-wrap" {...reveal}>
-                {sent ? (
-                  <div className="form-success" role="status">
-                    Tak. Vi vender tilbage inden for en hverdag — med et konkret næste skridt.
+                <form className="contact__form" onSubmit={handleSubmit}>
+                  <p className="close__form-lead">Udfyld de tre felter, så åbner vi henvendelsen i jeres mailprogram.</p>
+                  <div className="field">
+                    <label htmlFor="name">Navn</label>
+                    <input id="name" name="name" type="text" autoComplete="name" required />
                   </div>
-                ) : (
-                  <form className="contact__form" onSubmit={handleSubmit}>
-                    <p className="close__form-lead">Godt. Tre felter — så tager vi den derfra.</p>
-                    <div className="field">
-                      <label htmlFor="name">Navn</label>
-                      <input id="name" name="name" type="text" autoComplete="name" required />
-                    </div>
-                    <div className="field">
-                      <label htmlFor="email">E-mail</label>
-                      <input id="email" name="email" type="email" autoComplete="email" required />
-                    </div>
-                    <div className="field">
-                      <label htmlFor="message">Hvad fylder?</label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Hvilken risiko, hændelse eller udfordring vil I have styr på?"
-                        required
-                      />
-                    </div>
-                    <button className="btn btn--primary btn--block" type="submit">
-                      Send
-                    </button>
-                  </form>
-                )}
+                  <div className="field">
+                    <label htmlFor="email">E-mail</label>
+                    <input id="email" name="email" type="email" autoComplete="email" required />
+                  </div>
+                  <div className="field">
+                    <label htmlFor="message">Hvad vil I gerne have afklaret?</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Beskriv kort den risiko, hændelse eller udfordring, I gerne vil have styr på."
+                      required
+                    />
+                  </div>
+                  <button className="btn btn--primary btn--block" type="submit">
+                    Åbn henvendelse i mail
+                  </button>
+                </form>
               </motion.div>
             ) : null}
 

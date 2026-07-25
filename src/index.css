@@ -521,7 +521,7 @@ button {
   line-height: 1.02;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  max-width: 14ch;
+  max-width: 21ch;
   margin-bottom: 1rem;
   color: #0c1116;
 }
@@ -544,21 +544,40 @@ button {
   padding-top: 1.5rem;
 }
 
-.day__stat {
+.day__model-label {
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(4.5rem, 14vw, 7rem);
-  line-height: 0.85;
-  letter-spacing: 0.02em;
-  color: #c98400;
-  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7b5700;
+  margin-bottom: 0.75rem;
 }
 
-.day__stat-label {
-  max-width: 18ch;
-  font-size: 1rem;
-  color: #2a3340;
-  margin-bottom: 1.25rem;
+.day__model {
+  list-style: none;
+  display: grid;
+  margin-bottom: 1.4rem;
+  border-top: 1px solid rgba(18, 24, 32, 0.12);
+}
+
+.day__model li {
+  position: relative;
+  padding: 0.85rem 0 0.85rem 1.5rem;
+  border-bottom: 1px solid rgba(18, 24, 32, 0.12);
+  color: #121820;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.day__model li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #c98400;
 }
 
 .day__link {
@@ -669,9 +688,6 @@ button {
 
 .right__quote {
   margin: 0 0 1.25rem;
-}
-
-.right__quote p {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(1.6rem, 4.5vw, 2.75rem);

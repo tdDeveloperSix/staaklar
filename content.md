@@ -1,108 +1,121 @@
 # Ståklar — tekstindhold
 
-B2B-side med Chris Voss-inspireret dramaturgi: kalibrerede spørgsmål, accusation audit, labels, “that’s right” og et nej-orienteret næste skridt.
+B2B-side med en afdæmpet Chris Voss-inspireret dramaturgi: ét kalibreret spørgsmål, en fair gennemgang af kundens indvendinger og et nej-orienteret næste skridt.
 
 ## Meta
 
-- **Sidetitel:** Ståklar — Ét samlet beredskab for virksomheder
-- **Meta description:** Ståklar samler brand, fysisk sikkerhed, cybersikkerhed og krisestyring i ét sammenhængende beredskab for virksomheder.
+- **Sidetitel:** Ståklar — ét samlet beredskab for virksomheder
+- **Metabeskrivelse:** Ståklar samler brandsikkerhed, fysisk sikkerhed, cybersikkerhed og krisestyring i ét sammenhængende beredskab for virksomheder.
 
 ## Navigation
 
-- Brand: STÅKLAR
-- Det I tænker
+- Jeres overvejelser
 - Én samlet løsning
 - Faglighederne
-- En snak
-- CTA: Er det en dårlig idé?
+- Kontakt
+- **CTA:** Tag en kort snak
 
 ## Hero
 
-- **Kicker:** Beredskab for virksomheder
-- **Spørgsmål:** Er jeres virksomhed egentlig klar — eller har I bare fire leverandører og en god fornemmelse?
-- **Brødtekst:** Ståklar samler brand, fysisk sikkerhed, cybersikkerhed og krisestyring ét sted. Ikke som fire siloer, men som ét beredskab, I kan bruge.
-- **CTA 1:** Se hvor det hænger sammen
+- **Kicker:** Sammenhængende beredskab for virksomheder
+- **H1:** Har I fire sikkerhedsløsninger — eller ét samlet beredskab?
+- **Brødtekst:** Ståklar samler brandsikkerhed, fysisk sikkerhed, cybersikkerhed og krisestyring. I får én partner, ét samlet risikobillede og en plan, der hænger sammen på tværs.
+- **CTA 1:** Se, hvordan vi arbejder
 - **CTA 2:** Tag den korte snak
 
-## One stop shop
+## Tværgående beredskab
 
 - **Kicker:** Krisen følger ikke jeres organisationsdiagram
-- **Overskrift:** Fire fagligheder. Ét samlet svar.
-- **Tekst:** En brand eller et cyberangreb bliver sjældent i sin egen silo. Hændelsen kan stoppe driften, påvirke adgangen til jeres lokationer, bringe mennesker i fare og presse ledelsen til hurtige beslutninger. Alligevel bliver de fire områder ofte håndteret hver for sig.
-- **Tekst 2:** Hos Ståklar mødes de i samme plan. Det er jeres one stop shop — og kombinationen er vores secret sauce.
-- **Tal:** 1
-- **Tal-label:** samlet partner for hele virksomhedens robusthed
+- **Overskrift:** Hændelsen rammer på tværs. Beredskabet skal gøre det samme.
 
-## I tænker sikkert…
+En alvorlig hændelse påvirker sjældent kun ét område. Den kan berøre mennesker, bygninger, adgang, digitale systemer og den daglige drift på samme tid. Samtidig skal ledelsen kunne prioritere, beslutte og kommunikere under pres.
 
-- At I allerede har en leverandør til hver del.
-- At brandsikkerhed kan stå alene som en lovpligtig øvelse.
-- At fysisk sikkerhed, cyber og kriseplaner bedst håndteres hver for sig.
-- At medarbejderne nok ved, hvad de skal gøre, hvis noget sker.
-- At et samlet beredskab bliver endnu et tungt projekt.
-- **Lukning:** Hvis noget af det lyder bekendt, er I ikke bagud. I er organiseret som de fleste virksomheder.
+Når fagområderne har hver deres ansvarlige, leverandør og plan, kan der opstå huller mellem dem. Ståklar samler områderne, så ansvar, afhængigheder og handlinger hænger sammen.
+
+### Det betyder i praksis
+
+- Én indgang
+- Ét samlet blik på risikoen
+- Én fælles retning
+
+## Jeres overvejelser
+
+- I har allerede leverandører og ansvarlige på de enkelte områder.
+- De enkelte planer fungerer måske udmærket hver for sig.
+- Et samlet beredskab kan lyde som et stort og tungt projekt.
+- I ønsker ikke endnu et rådgivningsforløb, der ender i en mappe.
+
+**Lukning:** Det er forståeligt. Områderne har ofte forskellige ejere, budgetter og leverandører. Det er netop derfor, mellemrummene let bliver overset.
 
 ## Én samlet løsning
 
-- **Citat:** »Vi mangler ikke flere specialister. Vi mangler, at de ser den samme virksomhed og arbejder efter den samme plan.«
-- **Bekræftelse:** Det er forskellen på fire ydelser og ét beredskab. Den svære del er ikke at købe ekspertise. Det er at få ekspertisen til at virke sammen.
+**Overskrift:** I mangler ikke nødvendigvis flere specialister.
 
-### Hvad I egentlig vil
+I har brug for, at den eksisterende viden arbejder ud fra det samme risikobillede og den samme retning. Det er forskellen på fire separate ydelser og ét samlet beredskab.
 
-Beskytte driften, medarbejderne og tilliden — uden at gøre sikkerhed til virksomhedens fuldtidsprojekt.
+### Det skal I beskytte
 
-### Hvad I ikke vil
+Mennesker, drift, bygninger, data og tillid.
 
-Koordinere fire specialister, fire planer og fire forskellige svar, når noget rammer.
+### Det skal I undgå
 
-### Hvad der faktisk virker
+Uklare ansvar, modstridende planer og beslutninger, der først bliver koordineret under en hændelse.
 
-Én prioritering, ét samlet beredskab og fagligheder, der arbejder med — ikke ved siden af — hinanden.
+### Det skaber sammenhæng
+
+Fælles prioriteringer, tydelige roller og handlinger, der er afstemt på tværs af faglighederne.
 
 ## Faglighederne
 
-- **Overskrift:** One stop shop. Uden silotænkning.
-- **Brødtekst:** Hver faglighed er stærk alene. Værdien opstår, når de udfordrer hinandens blinde vinkler og bygger én løsning omkring jeres virkelighed. Det er kombinationen — ikke kataloget — der er vores secret sauce.
+**Overskrift:** Fire fagligheder. Én fælles retning.
 
-### Brand
+Hvert fagområde har sit eget fokus. Ståklars styrke er ikke kun de fire fagligheder, men arbejdet mellem dem. Her bliver afhængigheder tydelige, ansvar afstemt og løsninger vurderet som en del af virksomhedens samlede beredskab.
 
-Vi forebygger brand og gør mennesker, bygninger og drift klar, hvis det alligevel brænder.
+### Brandsikkerhed
+
+Forebyggelse, beredskab og tydelige handlinger, der beskytter mennesker, bygninger og drift ved brand.
 
 ### Fysisk sikkerhed
 
-Vi gør mennesker, adgang, bygninger og kritiske funktioner sværere at ramme.
+Beskyttelse af mennesker, adgang, bygninger og kritiske funktioner med fokus på at reducere sårbarheder.
 
 ### Cybersikkerhed
 
-Vi reducerer den digitale risiko og gør jer klar til at reagere, når teknologien svigter.
+Overblik over digitale risici, afhængigheder og reaktioner, når systemer eller data bliver påvirket.
 
 ### Krisestyring
 
-Vi samler ansvar, beslutninger og kommunikation i en plan, der også virker under pres.
+Klare roller, beslutningsveje og kommunikation, så ledelsen kan handle samlet under pres.
 
-## Sådan bliver det konkret
+## Sådan arbejder vi
 
-1. **Vi lytter først.** Hvad skal I beskytte? Hvad har I allerede? Hvor mærker I usikkerheden?
-2. **Vi samler blikkene.** Brand, fysisk sikkerhed, cyber og krisestyring vurderer den samme virkelighed — sammen.
-3. **I får én retning.** En prioriteret plan, konkrete tiltag og øvelser, som hænger sammen på tværs af hele virksomheden.
+**Overskrift:** Fra fire fagområder til én fælles retning
 
-Ingen standardpakke forklædt som rådgivning. Hvis vi ikke er det rigtige match, siger vi det også.
+1. **Vi skaber overblik.** Hvad skal I beskytte? Hvad har I allerede? Hvem har ansvaret, og hvor er I mest i tvivl?
+2. **Vi finder mellemrummene.** Vi ser på afhængigheder, overdragelser og beslutninger mellem brandsikkerhed, fysisk sikkerhed, cybersikkerhed og krisestyring.
+3. **Vi prioriterer næste skridt.** I får en tydelig retning for de tiltag, planer og øvelser, der skal hænge sammen på tværs af de relevante områder.
 
-## Close
+Indsatsen tager udgangspunkt i jeres virksomhed, jeres eksisterende beredskab og de risici, der er vigtigst at håndtere. Hvis vi ikke er det rette match, siger vi det.
 
-- **Spørgsmål:** Ville det være en dårlig idé at se, hvor jeres beredskab har huller mellem faglighederne?
-- **Hjælp:** Det sikre svar er ofte nej. Nej til endnu en siloløsning. Nej til at opdage mellemrummene midt i en krise.
-- **Valg 1:** Nej — lad os snakke
-- **Valg 2:** Jeg er ikke sikker endnu
+## Afslutning
+
+- **Spørgsmål:** Ville det være en dårlig idé at få et blik udefra på, hvor jeres beredskab ikke hænger sammen?
+- **Hjælpetekst:** I behøver ikke have defineret opgaven på forhånd. En kort samtale er nok til at afklare, om der er noget, vi bør se nærmere på sammen.
+- **Valg 1:** Nej — lad os tage en snak
+- **Valg 2:** Jeg er ikke klar endnu
+- **Svar ved valg 2:** Det er helt fair. I behøver ikke have defineret opgaven på forhånd. Beskriv kort, hvad I er i tvivl om, så kan vi tage udgangspunkt i det.
 
 ### Formular
 
 - Navn
 - E-mail
-- Hvad fylder?
-- **Placeholder:** Hvilken risiko, hændelse eller udfordring vil I have styr på?
+- Hvad vil I gerne have afklaret?
+- **Placeholder:** Beskriv kort den risiko, hændelse eller udfordring, I gerne vil have styr på.
+- **Knap:** Åbn henvendelse i mail
+
+Formularen åbner en færdig henvendelse til `hej@staaklar.dk` i brugerens mailprogram. Telefonnummer og mailadresse skal bekræftes før lancering.
 
 ## Footer
 
 - STÅKLAR
-- Fire fagligheder. Ét beredskab.
+- Fire fagligheder. Ét samlet beredskab.
