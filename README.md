@@ -1,6 +1,6 @@
 # Ståklar
 
-Et samlet B2B-beredskab på tværs af brand, fysisk sikkerhed, cybersikkerhed og krisestyring.
+Et samlet B2B-beredskab på tværs af brandsikkerhed, fysisk sikkerhed, cybersikkerhed og krisestyring.
 
 ## Kom i gang
 
