@@ -4,9 +4,10 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { track } from './lib/track'
 
 const navLinks = [
-  { href: '#tanker', label: 'Jeres overvejelser' },
-  { href: '#sandt', label: 'Én samlet løsning' },
+  { href: '#tanker', label: 'Overvejelser' },
+  { href: '#sandt', label: 'Løsningen' },
   { href: '#fagligheder', label: 'Faglighederne' },
+  { href: '#om-os', label: 'Om os' },
   { href: '#snak', label: 'Kontakt' },
 ]
 
@@ -33,6 +34,27 @@ const disciplines = [
   {
     role: 'Krisestyring',
     line: 'Klare roller, beslutningsveje og kommunikation, så ledelsen kan handle samlet under pres.',
+  },
+]
+
+const personas = [
+  {
+    name: 'Karsten',
+    area: 'Brand og forebyggelse',
+    role: 'Brandmand og uddannet brandsikringsrådgiver',
+    line: 'Karsten ser brandsikkerhed fra begge sider: den akutte indsats, når det brænder, og det grundige arbejde, der skal forhindre, at det sker. Han bidrager med et praktisk blik på mennesker, bygninger og beredskab.',
+  },
+  {
+    name: 'Claus',
+    area: 'Politi og beredskab',
+    role: 'Politimand med 25 års erfaring',
+    line: 'Claus har 25 års erfaring fra politiet, blandt andet fra beredskabspatruljer. Han bidrager med situationsforståelse og et skarpt blik for, hvordan mennesker, ansvar og beslutninger fungerer under pres.',
+  },
+  {
+    name: 'Mikkel',
+    area: 'Forsvar og sikkerhed',
+    role: 'Tidligere major i Forsvaret',
+    line: 'Mikkel er tidligere major i Forsvaret og har arbejdet professionelt med fysisk og virtuel sikkerhed på topledelsesniveau. Han bidrager med strategisk overblik og blik for sammenhængen mellem risiko, sikkerhed og ledelsesansvar.',
   },
 ]
 
@@ -335,6 +357,41 @@ function App() {
                 <p>{discipline.line}</p>
               </motion.article>
             ))}
+          </div>
+        </section>
+
+        <section className="about" id="om-os">
+          <div className="about__inner">
+            <div className="about__header">
+              <motion.div {...reveal}>
+                <p className="about__kicker">Mikkel, Claus og Karsten</p>
+                <h2 className="about__title">Tre mennesker. Ét fælles ansvar.</h2>
+              </motion.div>
+              <motion.p className="about__intro" {...reveal}>
+                Bag Ståklar står tre mennesker med hver deres vej ind i sikkerhed og beredskab. Karsten kommer fra brandvæsenet, Claus fra politiet og Mikkel fra Forsvaret og arbejdet med sikkerhed på ledelsesniveau. Sammen ser de både den konkrete hændelse, den menneskelige reaktion og ledelsens ansvar.
+              </motion.p>
+            </div>
+
+            <div className="about__grid">
+              {personas.map((person, index) => (
+                <motion.article
+                  key={person.role}
+                  className="about__card"
+                  initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <div className="about__card-top">
+                    <span className="about__num" aria-hidden="true">0{index + 1}</span>
+                    <span className="about__area">{person.area}</span>
+                  </div>
+                  <h3>{person.name}</h3>
+                  <p className="about__role">{person.role}</p>
+                  <p>{person.line}</p>
+                </motion.article>
+              ))}
+            </div>
           </div>
         </section>
 

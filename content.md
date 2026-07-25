@@ -9,9 +9,10 @@ B2B-side med en afdæmpet Chris Voss-inspireret dramaturgi: ét kalibreret spør
 
 ## Navigation
 
-- Jeres overvejelser
-- Én samlet løsning
+- Overvejelser
+- Løsningen
 - Faglighederne
+- Om os
 - Kontakt
 - **CTA:** Tag en kort snak
 
@@ -86,6 +87,32 @@ Overblik over digitale risici, afhængigheder og reaktioner, når systemer eller
 ### Krisestyring
 
 Klare roller, beslutningsveje og kommunikation, så ledelsen kan handle samlet under pres.
+
+## Om os
+
+**Kicker:** Mikkel, Claus og Karsten
+
+**Overskrift:** Tre mennesker. Ét fælles ansvar.
+
+Bag Ståklar står tre mennesker med hver deres vej ind i sikkerhed og beredskab. Karsten kommer fra brandvæsenet, Claus fra politiet og Mikkel fra Forsvaret og arbejdet med sikkerhed på ledelsesniveau. Sammen ser de både den konkrete hændelse, den menneskelige reaktion og ledelsens ansvar.
+
+### Karsten
+
+**Brandmand og uddannet brandsikringsrådgiver**
+
+Karsten ser brandsikkerhed fra begge sider: den akutte indsats, når det brænder, og det grundige arbejde, der skal forhindre, at det sker. Han bidrager med et praktisk blik på mennesker, bygninger og beredskab.
+
+### Claus
+
+**Politimand med 25 års erfaring**
+
+Claus har 25 års erfaring fra politiet, blandt andet fra beredskabspatruljer. Han bidrager med situationsforståelse og et skarpt blik for, hvordan mennesker, ansvar og beslutninger fungerer under pres.
+
+### Mikkel
+
+**Tidligere major i Forsvaret**
+
+Mikkel er tidligere major i Forsvaret og har arbejdet professionelt med fysisk og virtuel sikkerhed på topledelsesniveau. Han bidrager med strategisk overblik og blik for sammenhængen mellem risiko, sikkerhed og ledelsesansvar.
 
 ## Sådan arbejder vi
 
